@@ -82,3 +82,97 @@ footer h2 { margin-bottom: 2rem; font-size: 2rem; }
 /* Animations */
 .hidden { opacity: 0; transform: translateY(50px); transition: all 1s ease-out; }
 .show { opacity: 1; transform: translateY(0); }
+
+/* For mobile screen size  */
+
+@media (max-width: 768px) {
+
+ /* Navbar */
+  nav {
+    padding: 1rem 5%;
+  }
+
+  .nav-links {
+    gap: 1rem;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    height: auto;
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+  }
+
+  .greeting {
+    font-size: 0.9rem;
+  }
+
+  .name {
+    font-size: 2.6rem;
+  }
+
+  .role {
+    font-size: 1.3rem;
+  }
+
+  .summary {
+    font-size: 1rem;
+  }
+
+  .hero-btns {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* Sections spacing */
+  .section {
+    padding: 4rem 5% 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* Skills */
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* Projects */
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .large-span {
+    grid-column: span 1;
+  }
+
+  /* Timeline */
+  .timeline {
+    padding-left: 1rem;
+  }
+
+  .timeline-dot {
+    left: -26px;
+  }
+
+  /* Footer */
+  footer h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
